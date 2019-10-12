@@ -4,6 +4,19 @@ module.exports = function check(str, bracketsConfig) {
   }
 else { //TODO: добавить проверку количества правых и левых
 
+
+
+    let positionFirst = str.indexOf(bracketsConfig[0][0]);
+    let positionLast = str.lastIndexOf(bracketsConfig[0][1]);
+    console.log(bracketsConfig[0][0]);
+    console.log(bracketsConfig[0][1]);
+   console.log(positionFirst, positionLast);
+
+if ((positionLast - positionFirst > 1) && (positionLast - positionFirst % 2)) {
+     return false; // считаем количество
+    }
+
+
 return Array.isArray(bracketsConfig);
 
 }
