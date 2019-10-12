@@ -4,11 +4,23 @@ module.exports = function check(str, bracketsConfig) {
   }
 else { //TODO: добавить проверку количества правых и левых
 
-;
-
-
+return Array.isArray(bracketsConfig);
 
 }
 
   
 }
+
+/*
+var bracketMask = /\(|\)/g; //создаём маску
+var found = expr.match(bracketMask); //ищем по маске
+
+
+
+if (found.length % 2) {  //проверка количества
+        console.log(found.length + " нечетное, ошибка");
+} else {
+    console.log(found.length + " чётное, проверяем дальше");
+ }
+
+ */
